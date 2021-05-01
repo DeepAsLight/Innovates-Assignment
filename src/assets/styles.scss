@@ -1,0 +1,116 @@
+.room_booking_title{
+    display: flex;
+    justify-content: flex-start;
+    width: 502px;
+    margin: 50px auto 5px auto;
+
+    & > div{
+        color: #27328B;
+        font-size: 18px;
+    }
+}
+
+.room_booking_wrap {
+    border: 1px solid black;
+    padding: 8px;
+    width: 500px;
+    margin: 0 auto 50px auto;
+
+    &>.room_booking_container {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+
+        &>div:first-child {
+            text-transform: uppercase;
+            color: #27328B;
+            margin: auto 0;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        &>div:last-child {
+            display: flex;
+            justify-content: space-between;
+
+            &>button {
+                border: 0;
+                background: transparent;
+                cursor: pointer;
+            }
+
+            &>button:disabled {
+                opacity: 0.5;
+            }
+
+            &>div {
+                margin: auto;
+                width: 29px;
+                color: #7E7E7E;
+                font-size: 18px;
+            }
+        }
+    }
+
+    &>.room_booking_container:hover {
+        background-color: #eeeeee;
+        transform: scale(1.009);
+    }
+
+    & >.room_booking_container:hover i{
+        color: #E73A5F;
+    }
+
+    &>.room_booking_container:not(:last-child) {
+        border-bottom: 1px solid black;
+    }
+
+  
+}
+
+.room_booking_wrap:hover .room_booking_container{
+    border: 0px !important;
+}
+.createroom_wrap {
+    &>button {
+        background: #27328B;
+        color: white;
+        padding: 12px 25px;
+        font-size: 14px;
+        border: 1px solid #27328B;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    & >button:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        font-size: 17px;
+    }
+}
+
+.content_display {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+    background: #eeeeee;
+    border: 1px solid white;
+    width: 50%;
+}
+
+.content_display:hover{
+    border: 1px solid #7E7E7E;
+    background: white;
+}
+.plus_icon {
+    color: #E73A5F;
+}
+
+.minus_icon {
+    color: #27328B;
+}
+
+i{
+    color: #27328B;
+}
