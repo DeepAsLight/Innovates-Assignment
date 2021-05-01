@@ -4,6 +4,6 @@ Steps:
 2. Install node modules (npm install)
 3. Start npm (npm start)
 
-Github : https://github.com/DeepAsLight/Innovates-Assignment
+Github : https://github.com/DeepAsLight/Innoventes-Assignment
 
 On localhost : http://localhost:3000/
