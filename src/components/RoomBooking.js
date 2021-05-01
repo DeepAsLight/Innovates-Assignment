@@ -42,7 +42,11 @@ export default function RoomBooking() {
     temp += 1;
     setData({ ...data, adult: temp, rooms: c });
     console.log(data.adult, "adult");
-    if (id === 1) setData({ ...data, adult: data.adult - 1 });
+    var flag=0;
+    if (id === 1) {
+      if (data.adult % 4 === 1) {flag=1; }
+      setData({ ...data, adult: data.adult - 1,rooms:data.rooms-flag });
+    }
     if (id === 2) setData({ ...data, children: data.children - 1 });
   };
 
@@ -96,7 +100,7 @@ export default function RoomBooking() {
                   disabled={
                     (i === 0 && data.rooms === 1) ||
                     (i === 1 &&
-                      (data.rooms * 4 <= data.adult || data.adult === 1)) ||
+                      ( data.adult === 1)) ||
                     (i === 2 && data.children === 0)
                       ? true
                       : false
